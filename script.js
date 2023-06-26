@@ -9,6 +9,12 @@ const audio = document.getElementById('audio');
 const title = document.getElementById('title');
 const spindle1 = document.getElementById('spindle1');
 const spindle2 = document.getElementById('spindle2');
+
+const copyinfo = document.getElementById('copyinfo')
+var date = new Date()
+year = date.getFullYear()
+console.log(year);
+
 // const currTime = document.querySelector('#currTime');
 // const durTime = document.querySelector('#durTime');
 
@@ -179,3 +185,5 @@ audio.addEventListener('ended', nextSong);
 
 // Time of song
 // audio.addEventListener('timeupdate',DurTime);
+
+copyinfo.innerHTML = "Copyright Background Music " +year;
