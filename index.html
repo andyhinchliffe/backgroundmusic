@@ -17,17 +17,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet">
 <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"> -->
-    <title>Background Music Radio</title>
+    <title>Music Player</title>
   </head>
   <body>
     <!-- Links (sit on top) -->
     <ul>
-      <li><a href="default.asp">Contact</a></li>
-      <li><a href="news.asp">FAQ</a></li>
-      <li><a href="contact.asp">About</a></li>
-      <li><a href="about.asp">Home</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#info">Info</a></li>
     </ul>
-<div><h1>Background Radio</h1></div>
+<div><h1>Background Music</h1></div>
     
     <div class="wrapper">
       
@@ -62,7 +62,59 @@
     </div> 
 
     </div>
+    <div class="flex-container">
+      <div id="info" class="info"><strong><b>Info   </b></strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat velit, rutrum quis iaculis nec, imperdiet id massa. Duis elementum ut dui a ultrices. Quisque tincidunt, libero ut commodo ultrices, purus sem eleifend est, eget condimentum sapien orci id massa. Phasellus sapien mi, vehicula sit amet sollicitudin ultricies, imperdiet quis libero. Mauris tempus venenatis felis id viverra. Aenean id neque eu mauris blandit dictum ut eget massa. Curabitur fermentum pellentesque eros, eu varius quam. Curabitur gravida vulputate augue, eget sagittis dolor egestas sed. Ut sem nibh, vestibulum vitae odio a, vestibulum faucibus ante. Aliquam consectetur cursus metus, nec fermentum purus tincidunt quis.</div>
+      <div id="about" class="info"><strong><b>About   </b></strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat velit, rutrum quis iaculis nec, imperdiet id massa. Duis elementum ut dui a ultrices. Quisque tincidunt, libero ut commodo ultrices, purus sem eleifend est, eget condimentum sapien orci id massa. Phasellus sapien mi, vehicula sit amet sollicitudin ultricies, imperdiet quis libero. Mauris tempus venenatis felis id viverra. Aenean id neque eu mauris blandit dictum ut eget massa. Curabitur fermentum pellentesque eros, eu varius quam. Curabitur gravida vulputate augue, eget sagittis dolor egestas sed. Ut sem nibh, vestibulum vitae odio a, vestibulum faucibus ante. Aliquam consectetur cursus metus, nec fermentum purus tincidunt quis.</div>
+      <div id="faq" class="info"><strong><b>FAQ   </b></strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat velit, rutrum quis iaculis nec, imperdiet id massa. Duis elementum ut dui a ultrices. Quisque tincidunt, libero ut commodo ultrices, purus sem eleifend est, eget condimentum sapien orci id massa. Phasellus sapien mi, vehicula sit amet sollicitudin ultricies, imperdiet quis libero. Mauris tempus venenatis felis id viverra. Aenean id neque eu mauris blandit dictum ut eget massa. Curabitur fermentum pellentesque eros, eu varius quam. Curabitur gravida vulputate augue, eget sagittis dolor egestas sed. Ut sem nibh, vestibulum vitae odio a, vestibulum faucibus ante. Aliquam consectetur cursus metus, nec fermentum purus tincidunt quis.</div>
+    </div>
+
+    <div class="flex-container">
+      
+    <div  id="contact" class="contact-container">
+      <strong><b>Contact Us</b></strong><br>
+      <form action="action_page.php">
+    
+        <label for="fname"></label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname"></label>
+        <input type="text" id="lname" name="email" placeholder="Your email address..">
+    
+        <!-- <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select> -->
+    
+        <label for="subject"></label>
+        <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+    <div class="info"><strong><b>Royalty Free Music</b></strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat velit, rutrum quis iaculis nec, imperdiet id massa. Duis elementum ut dui a ultrices. Quisque tincidunt, libero ut commodo ultrices, purus sem eleifend est, eget condimentum sapien orci id massa. Phasellus sapien mi, vehicula sit amet sollicitudin ultricies, imperdiet quis libero. Mauris tempus venenatis felis id viverra. Aenean id neque eu mauris blandit dictum ut eget massa. Curabitur fermentum pellentesque eros, eu varius quam. Curabitur gravida vulputate augue, eget sagittis dolor egestas sed. Ut sem nibh, vestibulum vitae odio a, vestibulum faucibus ante. Aliquam consectetur cursus metus, nec fermentum purus tincidunt quis.</div>
+  </div>
+  
+  <div class="flex-container">
+      
+    <div  id="contact" class="contact-container">
+      <strong><b>Contact Us</b></strong><br>
+      <form action="https://formsubmit.co/andyh64@hotmail.com" method="POST">
+        <input type="text" name="name" required placeholder="Your name..">
+        <input type="email" name="email" required placeholder="Your email..">
+        <textarea type="message"name="subject" placeholder="Your message.." style="height:200px"></textarea>
+        <button type="submit">Submit</button>
+   </form>
+    </div>
+    <div class="info"><strong><b>Royalty Free Music</b></strong><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat velit, rutrum quis iaculis nec, imperdiet id massa. Duis elementum ut dui a ultrices. Quisque tincidunt, libero ut commodo ultrices, purus sem eleifend est, eget condimentum sapien orci id massa. Phasellus sapien mi, vehicula sit amet sollicitudin ultricies, imperdiet quis libero. Mauris tempus venenatis felis id viverra. Aenean id neque eu mauris blandit dictum ut eget massa. Curabitur fermentum pellentesque eros, eu varius quam. Curabitur gravida vulputate augue, eget sagittis dolor egestas sed. Ut sem nibh, vestibulum vitae odio a, vestibulum faucibus ante. Aliquam consectetur cursus metus, nec fermentum purus tincidunt quis.</div>
+  </div>
+    <ul>
+      <li id="copyinfo">Copywrite</li>
+          </ul>
 
     <script src="script.js"></script>
   </body>
 </html>
+
