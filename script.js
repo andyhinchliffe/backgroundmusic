@@ -33,7 +33,7 @@ loadSong();
 
 // Update song details
 function loadSong() {
-  let random= Math.floor(Math.random()*10)+1
+  let random= Math.floor(Math.random()*30)+1
   console.log(random)
   audio.src = `music/track${random}.mp3`;
   spindle1.src = `images/spindle.jpg`;
