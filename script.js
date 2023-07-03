@@ -10,7 +10,10 @@ const title = document.getElementById('title');
 const spindle1 = document.getElementById('spindle1');
 const spindle2 = document.getElementById('spindle2');
 
-const copyinfo = document.getElementById('copyinfo')
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+const copyinfo = document.getElementById('copyinfo');
 var date = new Date()
 year = date.getFullYear()
 console.log(year);
@@ -30,9 +33,9 @@ loadSong();
 
 // Update song details
 function loadSong() {
-  let random= Math.floor(Math.random()*3)+1
+  let random= Math.floor(Math.random()*10)+1
   console.log(random)
-  audio.src = `https://dailyoperation.co.uk/background-radio/music/track${random}.mp3`;
+  audio.src = `music/track${random}.mp3`;
   spindle1.src = `images/spindle.jpg`;
 }
 
@@ -185,5 +188,17 @@ audio.addEventListener('ended', nextSong);
 
 // Time of song
 // audio.addEventListener('timeupdate',DurTime);
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
 
 copyinfo.innerHTML = "Copyright Background Music " +year;
